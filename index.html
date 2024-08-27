@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-ico">
+    <title>Elaflix</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <a href="/">Elaflix</a>
+      </div>
+
+      <div id="menu-bar">
+        <svg
+          fill="#6cd591"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 50 50"
+          width="50px"
+          height="50px"
+        >
+          <path
+            d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"
+          />
+        </svg>
+      </div>
+      <nav class="navbar">
+        <a href="/">home</a>
+        <a href="#popular">popular</a>
+        <a href="#tv" onclick="getTV()">TV</a>
+        <a href="#login">Login</a>
+      </nav>
+    </header>
+    <!-- Hero -->
+    <div class="hero hero-img">
+      <div class="inner-content">
+        <div class="hero-title">
+          <h2>Welcome</h2>
+          <h3>
+            To Attitude Cinema
+          </h3>
+        </div>
+        <div class="search-form">
+          <form class="search-bar" id="form">
+            <input
+            style="color: black;"
+              type="text"
+              name="search"              
+              class="search"
+              id="search"
+              placeholder="Search for a movie, tv show, person......"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Movie List -->
+    <div class="main" id="main">
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
